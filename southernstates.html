@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Southern States(InfoHub)</title>
+    <style> 
+        .card {
+            width: 250px;
+            height: fit-content;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .he1{
+            margin: 15px;
+            
+        }
+
+
+       
+
+        .title {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .remove-button {
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        h4{
+            color: black;
+        }
+
+        .ht{
+            text-decoration: none;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        *{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    margin-right: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    background-blend-mode: darken;
+    
+}
+
+.btn1{
+    padding: 3px 20px;
+    margin: 12px -14px;
+        border: 2px solid white;
+        border-radius:8px;
+        background: rgb(80, 80, 80);
+        color:white;
+        cursor:pointer;
+        font-size: 20px;
+}
+
+.headings{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -90px;
+    margin-left: -40px;
+
+}
+
+.headings li{
+    list-style: none;
+    padding:15px 15px;
+}
+
+.headings li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.home  {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.logo{
+    width:30%;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .headings li:hover{
+    opacity: 70%;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    background-blend-mode: darken;
+    align-items: center;
+    font-family: cursive;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+    font-size: large;
+    word-spacing: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+h2{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 35px;
+    margin-top: 35px;
+
+}
+
+.contact{
+    background-color:#565c5c;;
+    height: 235px;
+}
+
+.contact1{
+    margin-left: 500px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mail{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: 5px;
+    color: white;
+}
+
+.phone{
+    margin-left: 70px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-phone{
+    cursor: pointer;
+}
+
+.fa-envelope{
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center ;
+    padding: 25px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.footer{
+    text-align: center ;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <p class="name">
+                <a href="index.html" class="home"> InfoHub </a>
+            </p>
+        </div>
+
+        <ul class="headings">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="#States" class="dropbtn">States</a></li>
+                <div class="dropdown-content">
+                    <a href="northernstates.html">Northern States</a>
+                    <a href="southernstates.html">Southern States</a>
+                    <a href="easternstates.html">Eastern States</a>
+                    <a href="westernstates.html">Western States</a>
+                    <a href="sevensisters.html">Seven Sisters</a>
+
+                </div>
+            </div>
+            <li><a href="Stats.html">Stats</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="Login.html">
+                    <button class="btn1">Login</button>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+<!-- ---------------------------------------------------------- -->
+    
+
+
+<!-- --------------------------------------------------------------------------- -->
+
+<h1 class="he1">Southern States</h1>
+<a href="https://goa-tourism.com">
+<div class="card">
+<img clas="c1" src="https://media.istockphoto.com/id/535168027/photo/india-goa-palolem-beach.jpg?b=1&s=170667a&w=0&k=20&c=Ma8WYe9NqMN9UiCYTAUby4lsZoaPjV5IqFWz0ZB7Lrs=" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>1. Goa</b></h4>
+        <p class="ht">Goa, located on the western coast of India, is a popular tourist destination known for its beautiful beaches, vibrant nightlife, and Portuguese colonial architecture. It attracts millions of visitors every year, both domestic and international, who come to enjoy its tropical climate, delicious seafood, and a variety of water sports. Goa's tourism industry has contributed significantly to the state's economy and has also led to the development of infrastructure and facilities for tourists, making it an attractive and convenient place to visit.       </p>
+        </div>   
+    </div>
+</div>
+</a>
+
+<a href="https://karnatakatourism.org/">
+<div class="card">
+    <img clas="c1" src="https://img.etimg.com/thumb/msid-93732971,width-640,resizemode-4,imgsize-157200/hampi-karnataka.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div>
+            <h4><b>2. Karnataka</b></h4>
+            <p id="hoverText">Karnataka, a state in South India, is rich in cultural heritage, natural beauty, and history, making it a popular tourist destination. Some of the most famous tourist attractions in Karnataka include the historic city of Hampi, the beaches of Gokarna, the hill stations of Coorg, the pilgrimage sites of Udupi and Dharmasthala, and the national parks and wildlife sanctuaries such as Bandipur and Nagarhole. The tourism industry in Karnataka has been growing steadily over the years, providing employment and boosting the state's economy, while also preserving its cultural and natural heritage for future generations.
+            </p>
+            </div>   
+        </div>
+    </div>
+</a>
+<!-- --------------------------------------- -->
+<a href="https://tourism.telangana.gov.in/">
+<div class="card">
+<img clas="c1" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Golconda-Fort.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>3. Telangana</b></h4>
+        <p id="hoverText">Telangana, located in South India, is a relatively new state with a rich cultural heritage, picturesque landscapes, and historic sites that attract a large number of tourists. Some of the popular tourist attractions in Telangana include the historic city of Warangal, the beautiful lakes of Hussain Sagar and Osman Sagar, the Buddhist site of Nagarjunakonda, the wildlife sanctuary of Kasu Brahmananda Reddy National Park, and the richly carved temples of Vemulawada and Thousand Pillar Temple.
+        </p>   
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+<!-- --------------------------------------- -->
+<a href="https://tourism.ap.gov.in/">
+<div class="card">
+<img clas="c1" src="https://www.trawell.in/admin/images/upload/719249944Amaravati_Main1.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>4. Andhra Pradesh</b></h4>
+        <p id="hoverText">Andhra Pradesh, a state located on the southeastern coast of India, is a rich blend of natural beauty, cultural heritage, and history that attracts tourists from all over the world. Some of the popular tourist attractions in Andhra Pradesh include the scenic hill station of Araku Valley, the picturesque beaches of Visakhapatnam, the ancient Buddhist site of Amaravati, the temple town of Tirumala, and the wildlife sanctuary of Sri Venkateswara National Park.
+
+        </p>   
+        </div>
+    </div>
+</div>
+</a>>
+
+
+<!-- --------------------------------------- -->
+<a href="https://www.tamilnadutourism.tn.gov.in/">
+<div class="card">
+<img clas="c1" src="https://www.tourmyindia.com/states/tamilnadu/image/tamilnadu-banner.webp" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>5. TamilNadu</b></h4>
+        <p id="hoverText">Tamil Nadu, a state located in the southern part of India, is a land of rich cultural heritage, stunning natural beauty, and ancient historical sites that attract millions of tourists every year. Some of the most popular tourist destinations in Tamil Nadu include the iconic Temple of Shore Temple in Mahabalipuram, the hill station of Kodaikanal, the wildlife sanctuary of Mudumalai, the ancient city of Madurai with its iconic Meenakshi Temple, and the scenic beaches of Kanyakumari.
+            </p>
+        </div>
+    </div>
+</div>
+</a>
+
+<!-- --------------------------------------- -->
+<a href="https://www.keralatourism.org/">
+<div class="card">
+<img clas="c1" src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1658486844.webp" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>6. Kerela</b></h4>
+        <p id="hoverText">Kerala, located on the southwestern coast of India, is known for its stunning natural beauty, pristine beaches, lush green landscapes, and a rich cultural heritage that attracts millions of tourists every year. Some of the popular tourist destinations in Kerala include the backwaters of Alleppey and Kumarakom, the hill stations of Munnar and Wayanad, the wildlife sanctuaries of Periyar and Silent Valley, and the beaches of Kovalam and Varkala.
+
+        </p>
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+        <section class="contact">
+            <h2 id="contactus" class="text-center ">Contact Us</h2>
+            <!-- &#x1F4E7<br>
+        &#128231<br>
+        &#xf0e0<br> -->
+            <ul class="">
+                <li class="contact1"> <a href="mailto:scientificguys718@gmail.com"><i class="fa fa-envelope"
+                            style="font-size:25px;color:rgb(255, 255, 255)"></a></i>
+                    <a href="mailto:" class="mail">infohub@gmail.com</a>
+                </li>
+                <li class="contact1"> <a class="" href="tel:9109621027"><i class="fa fa-phone"
+                            style="font-size:36px;color: white;"></i></a>
+                    <a class="mail phone" href="tel:">111111111111</a>
+
+                </li>
+            </ul>
+
+            </div>
+
+
+            <footer>
+                <br>
+                <hr>
+                <p class="footer"> Copyright &copy; 2027 -- All Rights Reserved</p>
+            </footer>
+        </section>
+
+
+
+
+
+
+    </body>
+
+</html>

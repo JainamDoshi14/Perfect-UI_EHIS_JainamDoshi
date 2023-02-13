@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Eastern States(InfoHub)</title>
+    <style> 
+        .card {
+            width: 250px;
+            height: fit-content;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        h4{
+            color: black;
+        }
+
+        .ht{
+            text-decoration: none;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .he1{
+            margin: 15px;
+        }
+
+        .title {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .remove-button {
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .ht{
+            text-decoration: none;
+        }
+
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        *{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    margin-right: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    background-blend-mode: darken;
+    
+}
+
+.btn1{
+    padding: 3px 20px;
+    margin: 12px -14px;
+        border: 2px solid white;
+        border-radius:8px;
+        background: rgb(80, 80, 80);
+        color:white;
+        cursor:pointer;
+        font-size: 20px;
+}
+
+.headings{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -90px;
+    margin-left: -40px;
+
+}
+
+.headings li{
+    list-style: none;
+    padding:15px 15px;
+}
+
+.headings li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.home  {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.logo{
+    width:30%;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .headings li:hover{
+    opacity: 70%;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    background-blend-mode: darken;
+    align-items: center;
+    font-family: cursive;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+    font-size: large;
+    word-spacing: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+h2{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 35px;
+    margin-top: 35px;
+
+}
+
+.contact{
+    background-color:#565c5c;;
+    height: 235px;
+}
+
+.contact1{
+    margin-left: 500px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mail{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: 5px;
+    color: white;
+}
+
+.phone{
+    margin-left: 70px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-phone{
+    cursor: pointer;
+}
+
+.fa-envelope{
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center ;
+    padding: 25px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.footer{
+    text-align: center ;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <p class="name">
+                <a href="index.html" class="home"> InfoHub </a>
+            </p>
+        </div>
+
+        <ul class="headings">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="#States" class="dropbtn">States</a></li>
+                <div class="dropdown-content">
+                    <a href="northernstates.html">Northern States</a>
+                    <a href="southernstates.html">Southern States</a>
+                    <a href="easternstates.html">Eastern States</a>
+                    <a href="westernstates.html">Western States</a>
+                    <a href="sevensisters.html">Seven Sisters</a>
+
+                </div>
+            </div>
+            <li><a href="Stats.html">Stats</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="Login.html">
+                    <button class="btn1">Login</button>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+<!-- ---------------------------------------------------------- -->
+    
+
+
+<!-- --------------------------------------------------------------------------- -->
+
+<h1 class="he1">Eastern States</h1>
+<a href="http://www.chhattisgarhtourism.in/">
+<div class="card">
+<img clas="c1" src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/0e/56/e4/1e/tirathgarh-teerathgarh.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>1. Chattisgarh</b></h4>
+        <p id="hoverText">Chhattisgarh is a hidden gem in the heart of India that offers a unique blend of natural beauty and cultural richness. The state is home to numerous waterfalls such as Chitrakoot Falls and Tirathgarh Falls, wildlife sanctuaries such as Indravati National Park and Kanger Valley National Park, and ancient caves such as the Kailash Gufa and Kotumsar Cave. Additionally, the state boasts of a rich cultural heritage, evident in its vibrant festivals, traditional crafts, and historic temples such as the Bhoramdeo Temple and Sirpur Group of Temples.
+
+        </p>
+        </div>   
+    </div>
+</div>
+</a>
+<!-- ---------------------------------- -->
+
+<a href="https://odishatourism.gov.in">
+<div class="card">
+    <img clas="c1" src="https://www.indiablooms.com/travel_pic/2016/Odisha-1456160576.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div>
+            <h4><b>2. Odisha</b></h4>
+            <p id="hoverText">Odisha, located on the east coast of India, is a popular tourist destination known for its rich cultural heritage, natural beauty, and religious significance. The state is home to numerous ancient temples such as the Sun Temple at Konark and the Jagannath Temple in Puri, as well as pristine beaches such as Puri Beach and Gopalpur Beach. Additionally, Odisha is also known for its wildlife sanctuaries and national parks, such as the Simlipal National Park and Chilika Lake.
+            </p>
+            </div>   
+        </div>
+    </div>
+</a>
+<!-- --------------------------------------- -->
+
+<a href="https://tourism.jharkhand.gov.in/">
+<div class="card">
+<img clas="c1" src="https://tourism.jharkhand.gov.in/app-assets/image/slider/46.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>3. Jharkhand</b></h4>
+        <p id="hoverText">Jharkhand, located in eastern India, is a state rich in natural beauty and cultural heritage, making it a popular tourist destination. The state is known for its scenic waterfalls such as Dassam Falls and Hundru Falls, as well as its rich wildlife, which can be experienced at the Betla National Park and Palamau Tiger Reserve. Additionally, Jharkhand is home to numerous ancient caves, rock paintings, and historic temples such as the Parasnath Hill and Rajrappa Temple, showcasing its rich cultural heritage.
+
+        </p>   
+        </div>
+    </div>
+</div>
+</a>
+
+<!-- --------------------------------------- -->
+<a href="https://tourism.bihar.gov.in/">
+<div class="card">
+<img clas="c1" src="https://static.toiimg.com/thumb/62338509/Bodhgaya.jpg?width=1200&height=900" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>4. Bihar</b></h4>
+        <p id="hoverText">Bihar, located in the eastern region of India, is a state rich in cultural and religious heritage, attracting tourists from all over the world. The state is home to numerous ancient Buddhist sites such as the Mahabodhi Temple and the Nalanda University ruins, as well as Hindu pilgrimage sites such as the Vaishali and Pawapuri. Additionally, Bihar is also known for its scenic waterfalls, such as the Karkat Waterfall and the Langshiang Falls, as well as its rich wildlife, which can be experienced at the Valmiki National Park and the Bhimbandh Wildlife Sanctuary.
+
+        </p>   
+        </div>
+    </div>
+</div>
+</a>
+
+<!-- --------------------------------------- -->
+<a href="https://www.wbtourism.gov.in/">
+<div class="card">
+<img clas="c1" src="https://wbtourism.gov.in/assets/images/kolkata_pic1.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>5. West Bengal</b></h4>
+        <p id="hoverText">West Bengal, located in the eastern region of India, is a state rich in cultural heritage, natural beauty, and history, making it a popular tourist destination. The state is known for its scenic hill stations such as Darjeeling and Kalimpong, as well as its historic cities such as Kolkata, which was once the capital of British India and is now known for its colonial architecture and cultural landmarks such as Victoria Memorial and St. Paul's Cathedral. Additionally, West Bengal is also known for its diverse wildlife, which can be experienced at the Sundarbans National Park and the Jaldapara Wildlife Sanctuary.
+            </p>
+        </div>
+    </div>
+</div>
+</a>
+<!-- --------------------------------------- -->
+<a href="https://www.sikkimtourism.gov.in">
+<div class="card">
+<img clas="c1" src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-North-Sikkim-Gurudongmar-Lake-Tourism.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>6. Sikkim</b></h4>
+        <p id="hoverText">Sikkim, located in the northeastern region of India, is a state known for its stunning natural beauty, rich cultural heritage, and unique biodiversity, making it a popular tourist destination. The state is home to the majestic Himalayas, with scenic locations such as the Kanchenjunga National Park, the Khangchendzonga Biosphere Reserve, and the Yumthang Valley. Additionally, Sikkim is also known for its ancient Buddhist monasteries, such as the Pemayangtse Monastery and the Rumtek Monastery, which showcase its rich cultural heritage. 
+
+        </p>
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+        <section class="contact">
+            <h2 id="contactus" class="text-center ">Contact Us</h2>
+            <!-- &#x1F4E7<br>
+        &#128231<br>
+        &#xf0e0<br> -->
+            <ul class="">
+                <li class="contact1"> <a href="mailto:scientificguys718@gmail.com"><i class="fa fa-envelope"
+                            style="font-size:25px;color:rgb(255, 255, 255)"></a></i>
+                    <a href="mailto:" class="mail">infohub@gmail.com</a>
+                </li>
+                <li class="contact1"> <a class="" href="tel:9109621027"><i class="fa fa-phone"
+                            style="font-size:36px;color: white;"></i></a>
+                    <a class="mail phone" href="tel:">111111111111</a>
+
+                </li>
+            </ul>
+
+            </div>
+
+
+            <footer>
+                <br>
+                <hr>
+                <p class="footer"> Copyright &copy; 2027 -- All Rights Reserved</p>
+            </footer>
+        </section>
+
+
+
+
+
+
+    </body>
+
+</html>

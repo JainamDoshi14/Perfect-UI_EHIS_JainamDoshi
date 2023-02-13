@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>seven Siters(InfoHub)</title>
+    <style> 
+        .card {
+            width: 250px;
+            height: fit-content;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        h4{
+            color: black;
+        }
+
+        .ht{
+            text-decoration: none;
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .he1{
+            margin: 15px;
+        }
+
+        .title {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .remove-button {
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .ht{
+            text-decoration: none;
+        }
+
+        
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            
+        }
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        *{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    margin-right: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    background-blend-mode: darken;
+    
+}
+
+.btn1{
+    padding: 3px 20px;
+    margin: 12px -14px;
+        border: 2px solid white;
+        border-radius:8px;
+        background: rgb(80, 80, 80);
+        color:white;
+        cursor:pointer;
+        font-size: 20px;
+}
+
+.headings{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -90px;
+    margin-left: -40px;
+
+}
+
+.headings li{
+    list-style: none;
+    padding:15px 15px;
+}
+
+.headings li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.home  {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.logo{
+    width:30%;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .headings li:hover{
+    opacity: 70%;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    background-blend-mode: darken;
+    align-items: center;
+    font-family: cursive;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+    font-size: large;
+    word-spacing: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+h2{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 35px;
+    margin-top: 35px;
+
+}
+
+.contact{
+    background-color:#565c5c;;
+    height: 235px;
+}
+
+.contact1{
+    margin-left: 500px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mail{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: 5px;
+    color: white;
+}
+
+.phone{
+    margin-left: 70px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-phone{
+    cursor: pointer;
+}
+
+.fa-envelope{
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center ;
+    padding: 25px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.footer{
+    text-align: center ;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <p class="name">
+                <a href="index.html" class="home"> InfoHub </a>
+            </p>
+        </div>
+
+        <ul class="headings">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="#States" class="dropbtn">States</a></li>
+                <div class="dropdown-content">
+                    <a href="northernstates.html">Northern States</a>
+                    <a href="southernstates.html">Southern States</a>
+                    <a href="easternstates.html">Eastern States</a>
+                    <a href="westernstates.html">Western States</a>
+                    <a href="sevensisters.html">Seven Sisters</a>
+
+                </div>
+            </div>
+            <li><a href="Stats.html">Stats</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="Login.html">
+                    <button class="btn1">Login</button>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+<!-- --------------------------- -->
+
+<!-- --------------------------------------------------------------------------- -->
+
+<h1 class="he1">The Seven Sisters</h1>
+
+
+<div class="card">
+    <img clas="c1" src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/assam-tourist-places.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div>
+            <h4><b>1. Assam</b></h4>
+            <p id="hoverText">Assam is a state in northeast India, known for its tea gardens, wildlife, and rich cultural heritage.
+                The state is home to the famous Kaziranga National Park, which is a UNESCO World Heritage Site and a popular tourist destination for its one-horned rhinoceroses.
+                Assam is also famous for its tea gardens, which attract tourists with its picturesque landscapes and tea-tasting tours. The state is a major producer of tea in India, and tea tourism has become a significant part of its economy.
+
+            </p>
+            </div>   
+        </div>
+    </div>
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://pyt-blogs.imgix.net/2020/06/arunachal-pradesh-3875150_1920.jpg?auto=format&ixlib=php-3.3.0" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>2. Arunachal Pradesh</b></h4>
+        <p id="hoverText">Arunachal Pradesh is a state located in the northeastern part of India, bordered by the states of Assam and Nagaland to the south and Myanmar to the east.
+            The state is known for its diverse culture and abundant natural beauty, including the Himalayan mountain ranges, numerous rivers, and lush forests.
+            The name "Arunachal Pradesh" means "land of the dawn-lit mountains" in Sanskrit, reflecting the state's location at the easternmost edge of India and its stunning sunrise views.
+        </p>   
+        </div>
+    </div>
+</div>
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2019/12/Aizawl.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>3. Mizorum</b></h4>
+        <p id="hoverText">Mizoram is a state in northeast India, known for its natural beauty, rich cultural heritage, and diverse ethnic communities.
+            The state is famous for its rolling hills, pristine forests, and sparkling rivers. Popular tourist destinations in Mizoram include Aizawl, Champhai, and the Phawngpui National Park, which is known for its diverse flora and fauna.
+            Mizoram is also well-known for its rich cultural heritage, including traditional music, dance, and festivals. The state is home to several tribes, each with their own unique customs, traditions, and art forms, which provide a glimpse into the rich cultural heritage of the region and are a major attraction for tourists visiting Mizoram.
+        </p>   
+        </div>
+    </div>
+</div>
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://www.ghumney.com/uploads/0000/19/2021/08/23/7-days-manipur-tour-f.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>4. Manipur</b></h4>
+        <p id="hoverText">Manipur is a state in northeast India, known for its natural beauty, cultural heritage, and diverse ethnicity.
+            The state is famous for its scenic hill stations, rolling green hills, and serene lakes. The most popular tourist attractions in Manipur include Keibul Lamjao National Park, Langthabal, and Shree Govindajee Temple.
+            Manipur is also well-known for its rich cultural heritage, including traditional dance forms like the Manipuri dance, which attracts a lot of tourists.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://tourism.nagaland.gov.in/wp-content/uploads/2022/06/doyang-960x600-1.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>5. Nagaland</b></h4>
+        <p id="hoverText">Nagaland is a state in northeast India, known for its diverse tribal culture, scenic beauty, and rich history.
+            The state is famous for its picturesque hill stations, lush green forests, and sparkling rivers. Popular tourist destinations in Nagaland include Kohima, Dimapur, and Mon, known for their historical sites and natural beauty.
+            Nagaland is also well-known for its tribal culture and festivals, including the Hornbill Festival, which showcases the traditional music, dance, and food of the various tribes of Nagaland.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://ixplore.co.in/wp-content/uploads/2020/05/feautere-compressor.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>6. Tripura</b></h4>
+        <p id="hoverText">Tripura is a state in northeast India, known for its natural beauty, rich cultural heritage, and unique tribal communities.
+            The state is famous for its scenic hills, beautiful temples, and ancient ruins. Popular tourist destinations in Tripura include the Ujjayanta Palace, the Tripureshwari Temple, and the Unakoti Hill, which are all known for their historical and cultural significance.
+            Tripura is also well-known for its tribal culture, which is unique and diverse. The state is home to several tribal communities, each with their own traditional customs, music, dance, and handicrafts.
+            
+        </p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://www.traveldailymedia.com/assets/2022/09/shutterstock_634408664-scaled-e1630253565553.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>7. Meghalaya</b></h4>
+        <p id="hoverText">Meghalaya is a state in northeast India, known for its scenic beauty, rich cultural heritage, and unique geological formations.
+            The state is famous for its rolling hills, sparkling waterfalls, and crystal-clear rivers. Popular tourist destinations in Meghalaya include Cherrapunji, Shillong, and the living root bridges, which are unique bridges made from the roots of rubber trees.
+            Meghalaya is also well-known for its cultural heritage, which includes traditional music, dance, and festivals. The state is home to several tribes, each with their own unique customs and traditions
+            
+        </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+        <section class="contact">
+            <h2 id="contactus" class="text-center ">Contact Us</h2>
+            <!-- &#x1F4E7<br>
+        &#128231<br>
+        &#xf0e0<br> -->
+            <ul class="">
+                <li class="contact1"> <a href="mailto:scientificguys718@gmail.com"><i class="fa fa-envelope"
+                            style="font-size:25px;color:rgb(255, 255, 255)"></a></i>
+                    <a href="mailto:" class="mail">infohub@gmail.com</a>
+                </li>
+                <li class="contact1"> <a class="" href="tel:9109621027"><i class="fa fa-phone"
+                            style="font-size:36px;color: white;"></i></a>
+                    <a class="mail phone" href="tel:">111111111111</a>
+
+                </li>
+            </ul>
+
+            </div>
+
+
+            <footer>
+                <br>
+                <hr>
+                <p class="footer"> Copyright &copy; 2027 -- All Rights Reserved</p>
+            </footer>
+        </section>
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Northern States(InfoHub)</title>
+    <style>
+        .card {
+            width: 250px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        h4{
+            color: black;
+        }
+
+        .ht{
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .he1{
+            margin: 15px;
+        }
+
+        .title {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .remove-button {
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .c1{
+            height: 100px;
+            width: 50px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 400px;
+            border-radius: 5px;
+            height: fit-content;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 450px;
+            margin-left: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        
+
+        *{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    margin-right: 300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    background-blend-mode: darken;
+    
+}
+
+.btn1{
+    padding: 3px 20px;
+    margin: 12px -14px;
+        border: 2px solid white;
+        border-radius:8px;
+        background: rgb(80, 80, 80);
+        color:white;
+        cursor:pointer;
+        font-size: 20px;
+}
+
+.headings{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -90px;
+    margin-left: -40px;
+
+}
+
+.headings li{
+    list-style: none;
+    padding:15px 15px;
+}
+
+.headings li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.home  {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.logo{
+    width:30%;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.dropbtn {
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  .headings li:hover{
+    opacity: 70%;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    background-blend-mode: darken;
+    align-items: center;
+    font-family: cursive;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+    font-size: large;
+    word-spacing: 3px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h3{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;
+    margin-top: 35px;
+
+}
+
+h2{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 35px;
+    margin-top: 35px;
+
+}
+
+.contact{
+    background-color:#565c5c;;
+    height: 235px;
+}
+
+.contact1{
+    margin-left: 500px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mail{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: 5px;
+    color: white;
+}
+
+.phone{
+    margin-left: 70px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-phone{
+    cursor: pointer;
+}
+
+.fa-envelope{
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center ;
+    padding: 25px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.footer{
+    text-align: center ;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <p class="name">
+                <a href="index.html" class="home"> InfoHub </a>
+            </p>
+        </div>
+
+        <ul class="headings">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="#States" class="dropbtn">States</a></li>
+                <div class="dropdown-content">
+                    <a href="northernstates.html">Northern States</a>
+                    <a href="southernstates.html">Southern States</a>
+                    <a href="easternstates.html">Eastern States</a>
+                    <a href="westernstates.html">Western States</a>
+                    <a href="sevensisters.html">Seven Sisters</a>
+
+                </div>
+            </div>
+            <li><a href="Stats.html">Stats</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="Login.html">
+                    <button class="btn1">Login</button>
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+
+<!-- ------------------------------------------------------------>
+
+
+
+
+<h1 class="he1">Northern States</h1>
+
+<a href="https://jktourism.jk.gov.in/">
+<div class="card">
+    <img clas="c1" src="https://c.ndtvimg.com/2022-12/m7a8tqv_jammu-and-kashmir_625x300_20_December_22.jpg?im=Resize=(1230,900)" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div>
+            <h4><b>1. Jammu and Kashmir</b></h4>
+            <p class="ht">Jammu and Kashmir is home to several valleys such as the Kashmir Valley, Chenab Valley, Sindh Valley and Lidder Valley. Some major tourist attractions in Jammu and Kashmir are Srinagar, with its renowned Dal Lake and Mughal Gardens, Gulmarg, Pahalgam, Bhaderwah, Patnitop and Jammu. Every year, thousands of Hindu pilgrims visit holy shrines of Vaishno Devi and Amarnath which has had a significant impact on the state's economy.
+
+            </p>
+            </div>   
+        </div>
+    </div>
+</a>
+<!-- --------------------------------------- -->
+<a href="https://himachaltourism.gov.in/">
+<div class="card">
+<img clas="c1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_village_of_Tosh_in_Himachal_Pradesh%2C_India_%28photo_by_Jim_Ankan_Deka%29.jpg/1200px-The_village_of_Tosh_in_Himachal_Pradesh%2C_India_%28photo_by_Jim_Ankan_Deka%29.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>2. Himachal Pradesh</b></h4>
+        <p class="ht">Himachal Pradesh is a popular tourist destination in India, known for its scenic beauty, adventure activities, and rich cultural heritage.
+                The state is famous for its hill stations like Shimla, Manali, and Dharamsala that attract a large number of tourists from across the country and abroad.
+                Adventure tourism is a major draw in Himachal Pradesh, with activities like trekking, paragliding, rafting, and skiing attracting adventure enthusiasts.
+        </p>   
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://cdn.britannica.com/53/176353-050-5B854179/Harmandir-Sahib-Amritsar-Punjab-India.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>3. Punjab</b></h4>
+        <p class="ht">Punjab is a popular tourist destination in India, known for its rich cultural heritage and vibrant history.
+
+            The state is famous for its golden temple, Amritsar, and other historical monuments such as the Jallianwala Bagh, which commemorate important events in Indian history.
+            
+            In addition to its historical sites, Punjab is also known for its delicious cuisine, vibrant music and dance scene, and bustling cities such as Chandigarh, which offer a mix of modern and traditional attractions for tourists to explore.</p>   
+        </div>
+    </div>
+</div>
+
+
+<!-- --------------------------------------- -->
+<a href="https://punjabtourism.punjab.gov.in/">
+<div class="card">
+<img clas="c1" src="https://lh3.googleusercontent.com/unUj62LzZTjr5x_kl5828zffNsOz276XCstmEnmn791_UNcpH9taraWdSuMXLjXS1jXzD-X2zBG14Bn3mbogO6xqy_RRiMpqpSM-oupDbbnd5_L1i7V_JesGOp8cdLOsBLlF-STue99KPqtCg8w" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>4. Uttarkhand</b></h4>
+        <p class="ht">Uttarakhand, located in the northern part of India, is a state known for its natural beauty, spiritual significance, and cultural richness.
+
+            The state is famous for its scenic hill stations, such as Nainital and Mussoorie, which offer breathtaking views of the Himalayas and a peaceful escape from the city.
+            
+            Uttarakhand is also a destination for religious and spiritual tourism, with important Hindu pilgrimage sites such as Haridwar, Rishikesh, and Badrinath, as well as the Kedarnath Temple and Char Dham Yatra.
+            </p>
+        </div>
+    </div>
+</div>
+</a>
+
+
+
+<!-- --------------------------------------- -->
+<a href="https://haryanatourism.gov.in/">
+<div class="card">
+<img clas="c1" src="https://tourismnewslive.com/wp-content/uploads/2018/04/Brahmasarovar.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>5. Haryana</b></h4>
+        <p class="ht">Haryana is a state located in northern India, known for its rich cultural heritage and diverse tourist attractions.
+
+            The state is famous for its historical sites, such as the Qila Rai Pithora, an ancient fort in Delhi, and the Tau Devi Lal Bio Diversity Park, which showcases the region's natural beauty.
+            
+            In addition to its historical and natural attractions, Haryana is also a popular destination for religious and spiritual tourism, with important pilgrimage sites such as the Sheetla Mata Temple and the Jain Temple at Pehowa.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- --------------------------------------- -->
+
+<div class="card">
+<img clas="c1" src="https://www.ibef.org/assets/images/Uttar-Pradesh-tajmahal.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+        <div>
+        <h4><b>6. Uttar Pradesh</b></h4>
+        <p class="ht">Uttar Pradesh is a state located in northern India, known for its rich cultural heritage and diverse tourist attractions.
+
+            The state is famous for its historical monuments, such as the Taj Mahal in Agra and the Fatehpur Sikri, a UNESCO World Heritage site. It is also known for its spiritual and religious sites, including the Hindu city of Varanasi and the Buddhist city of Sarnath.
+            
+            In addition, Uttar Pradesh is also a popular destination for wildlife tourism, with several national parks and wildlife sanctuaries.
+            
+        </p>
+        </div>
+    </div>
+</div>
+</a>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+        <section class="contact">
+            <h2 id="contactus" class="text-center ">Contact Us</h2>
+            <!-- &#x1F4E7<br>
+        &#128231<br>
+        &#xf0e0<br> -->
+            <ul class="">
+                <li class="contact1"> <a href="mailto:doshijainam14@gmail.com.com"><i class="fa fa-envelope"
+                            style="font-size:25px;color:rgb(255, 255, 255)"></a></i>
+                    <a href="mailto:doshijainam14@gmail.com" class="mail">infohub@gmail.com</a>
+                </li>
+                <li class="contact1"> <a class="" href="tel:8085097349"><i class="fa fa-phone"
+                            style="font-size:36px;color: white;"></i></a>
+                    <a class="mail phone" href="tel:8085907349">8085907349</a>
+
+                </li>
+            </ul>
+
+            </div>
+
+
+            <footer>
+                <br>
+                <hr>
+                <p class="footer"> Copyright &copy; 2027 -- All Rights Reserved</p>
+            </footer>
+        </section>
+
+
+
+
+
+
+    </body>
+
+</html>
